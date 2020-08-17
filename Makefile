@@ -21,6 +21,9 @@ SRCS := $(wildcard *.cpp)
 # $(patsubst %.cpp,%.o,$(SRCS)): substitute all ".cpp" file name strings to ".o" file name strings
 OBJS := $(patsubst %.cpp,%.o,$(SRCS))
 
+# default
+all: build
+
 build: $(OBJS)
 	$(EMCC) $(CPPFLAGS) $(EMFLAGS) $** -o $@.html
 

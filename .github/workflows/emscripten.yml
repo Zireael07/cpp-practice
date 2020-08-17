@@ -11,4 +11,4 @@ jobs:
         run: emcc -v
 
       - name: Build
-        run: make build
+        run: make -d
