@@ -28,4 +28,4 @@ build: $(OBJS)
 	$(EMCC) $(CPPFLAGS) $(EMFLAGS) $** -o $@.html
 
 clean:
-	del /f Part*.data Part*.html Part*.js Part*.wasm
+	del /f *.data *.html *.js *.wasm
