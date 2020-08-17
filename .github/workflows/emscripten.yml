@@ -9,3 +9,6 @@ jobs:
 
       - name: Verify
         run: emcc -v
+
+      - name: Build
+        run: make build
