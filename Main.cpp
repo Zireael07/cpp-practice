@@ -1,6 +1,6 @@
 #include "Game.hpp"
-#include "Engine/OpenGL.hpp"
-#include "Engine/Console.hpp"
+#include "OpenGL.hpp"
+#include "Console.hpp"
 
 #ifdef __EMSCRIPTEN__
 #include <emscripten.h>

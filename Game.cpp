@@ -1,6 +1,6 @@
 #include "Game.hpp"
-#include "Engine/OpenGL.hpp"
-#include "Engine/Console.hpp"
+#include "OpenGL.hpp"
+#include "Console.hpp"
 
 Game::Game(SDL_Window& window, Console& console)
 	: m_window(window)
