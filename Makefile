@@ -24,8 +24,11 @@ OBJS := $(patsubst %.cpp,%.o,$(SRCS))
 # default
 all: build
 
-build: $(OBJS)
-	$(EMCC) $(CPPFLAGS) $(EMFLAGS) $** -o $@.html
+# build: $(OBJS)
+# 	$(EMCC) $(CPPFLAGS) $(EMFLAGS) $** -o $@.html
+
+build-web:
+	emcc -Wextra -Wpedantic ${CPPFLAGS} $(EMFLAGS) Main.cpp -o index.html
 
 clean:
 	del /f *.data *.html *.js *.wasm
